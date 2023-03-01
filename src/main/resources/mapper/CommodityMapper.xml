@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="an.qqwer.wallet.mapper.CommodityMapper">
+
+
+<!--    根据商品id查询商品信息-->
+    <select id="selectCommodityByID" parameterType="int" resultType="an.qqwer.wallet.bean.Commodity">
+        select * from commodity where id = #{id};
+    </select>
+
+
+<!--    更新商品数量-->
+    <update id="updateComCount">
+        update commodity set count = #{count} where id = #{id};
+    </update>
+
+</mapper>
