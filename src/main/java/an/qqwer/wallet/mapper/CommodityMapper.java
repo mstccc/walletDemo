@@ -3,7 +3,9 @@ package an.qqwer.wallet.mapper;
 import an.qqwer.wallet.bean.Commodity;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
 @Mapper
 public interface CommodityMapper {
 
